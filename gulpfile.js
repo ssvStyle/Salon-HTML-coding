@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+let gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
@@ -29,4 +29,9 @@ gulp.task('img', function () {
         .pipe(gulp.dest('prod/img'));
 });
 
-gulp.task('build', gulp.series(['html', 'style', 'img', 'js']));
+gulp.task('fonts:copy', async function () {
+    gulp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+        .pipe(gulp.dest('prod/fonts'));
+});
+
+gulp.task('build', gulp.series(['html', 'style', 'img', 'js', 'fonts:copy']));
