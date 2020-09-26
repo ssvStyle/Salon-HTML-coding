@@ -22,10 +22,11 @@
     margin: 0 auto;
   }
 }
+
 .header_menu {
   @include dFlexDir();
   &-element {
-   & a {
+    & a {
       text-transform: uppercase;
       padding: 20px;
       box-sizing: border-box;
@@ -33,11 +34,13 @@
       font-weight: 500;
       font-size: 13px;
       color: $heading;
-      &:hover{
+      &:hover {
         background: $default;
         color: white;
       }
-      }
     }
-
+    & a, a:hover {
+      transition: 0.3s;
+    }
+  }
 }
