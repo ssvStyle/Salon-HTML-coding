@@ -1,0 +1,6 @@
+@mixin dFlexDir($display: 'flex', $flexDir: 'row') {
+
+  display: $display;
+  flex-direction: $flexDir;
+
+}
