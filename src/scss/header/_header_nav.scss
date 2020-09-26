@@ -22,14 +22,22 @@
     margin: 0 auto;
   }
 }
-
 .header_menu {
   @include dFlexDir();
   &-element {
-    padding: 15px 0;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-right: 20px;
-  }
+   & a {
+      text-transform: uppercase;
+      padding: 20px;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 13px;
+      color: $heading;
+      &:hover{
+        background: $default;
+        color: white;
+      }
+      }
+    }
+
 }
