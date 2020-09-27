@@ -1,9 +1,14 @@
 .button_default{
   text-decoration: none;
-  background: $default;
+  background: $btnPrim;
   padding: 10px 20px;
   border-radius: 30px;
   margin: 0 auto;
   font-weight: 500;
   color: $bgColor;
+  border: 1px solid $default;
+  &:hover{
+    background: $default;
+    transition: $transition;
+  }
 }
