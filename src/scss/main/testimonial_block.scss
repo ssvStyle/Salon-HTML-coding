@@ -2,6 +2,7 @@
   @extend .service;
   padding: 0 0 20px 0;
   & .testimonial_block{
+    @extend .service_block;
     &-content {
       color: $base;
       font-style: italic;
@@ -13,6 +14,8 @@
       }
     }
     &-name {
+      @extend .service_block-price;
+      color: $heading;
       font-size: 18px;
       font-weight: 600;
       margin-bottom: 10px;
@@ -21,7 +24,6 @@
       color: $default;
       font-size: 13px;
       text-transform: uppercase;
-      padding-right: 10px;
       font-weight: 400;
     }
   }
