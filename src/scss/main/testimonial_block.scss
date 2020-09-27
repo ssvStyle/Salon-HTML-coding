@@ -1,0 +1,28 @@
+.testimonial{
+  @extend .service;
+  padding: 0 0 20px 0;
+  & .testimonial_block{
+    &-content {
+      color: $base;
+      font-style: italic;
+      &:before {
+        @include quotes();
+      }
+      &:after {
+        @include quotes();
+      }
+    }
+    &-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    &-meta {
+      color: $default;
+      font-size: 13px;
+      text-transform: uppercase;
+      padding-right: 10px;
+      font-weight: 400;
+    }
+  }
+}

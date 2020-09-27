@@ -1,6 +1,32 @@
 .about {
   margin-top: 70px;
+  padding: 40px 0;
   width: 100%;
   background: $bgAboutColor;
   height: 500px;
+  &_block {
+    @include dFlexDir();
+    width: $baseWidth;
+    margin: 0 auto;
+    padding: 20px 40px;
+  }
+  & img {
+    margin-right: 25px;
+  }
+  & .about_block-content {
+    padding: 50px;
+    background: $bgColor;
+    & h2 {
+      font-weight: 400;
+    }
+    & h5 {
+      font-weight: 300;
+      color: $base;
+    }
+    & p {
+      font-weight: 300;
+      color: $base;
+      margin-bottom: 35px;
+    }
+  }
 }
