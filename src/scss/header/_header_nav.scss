@@ -4,6 +4,7 @@
 }
 
 .header_nav {
+  background: $bgColor;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,13 +18,14 @@
   & .container {
     @include dFlexDir();
     justify-content: space-between;
-    width: 1170px;
+    width: $baseWidth;
     margin: 0 auto;
   }
 }
 
 .header_menu {
   @include dFlexDir();
+  padding: 0 10px;
   &-element {
     padding: 20px 0;
     & a {
@@ -40,7 +42,7 @@
       }
     }
     & a:hover {
-      transition: 0.3s;
+      transition: 0.4s;
     }
   }
 }

@@ -1,0 +1,10 @@
+.main_header {
+  text-align: center;
+  padding: 20px 0;
+  &-h1 {
+    font-weight: 500;
+  }
+  &-content {
+    color: $base;
+  }
+}

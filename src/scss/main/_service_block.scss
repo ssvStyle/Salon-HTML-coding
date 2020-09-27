@@ -1,0 +1,33 @@
+.service{
+  padding-bottom: 50px;
+  width: $baseWidth;
+  margin: 0 auto;
+  @include dFlexDir();
+  &_block{
+    padding-right: 60px;
+    @include dFlexDir($flexDir: 'column');
+    flex: 12 3 33em;
+    &-img{
+      width: 55px;
+    }
+    &-header{
+      font-weight: 400;
+      line-height: 32px;
+      margin-bottom: 0;
+    }
+    &-description{
+      color: $base;
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 300;
+      margin: 10px 0 20px 0;
+    }
+    &-price{
+      font-weight: 500;
+      font-size: 24px;
+      color: $default;
+      margin-top: auto;
+      margin-bottom: 5px;
+    }
+  }
+}
