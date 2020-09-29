@@ -1,0 +1,16 @@
+.threeBlocks {
+  width: $baseWidth;
+  margin: 0 auto;
+  @include dFlexDirect();
+}
+
+.oneBlock {
+  padding-right: 60px;
+  @include dFlexDirect('column');
+  flex: 12 3 33em;
+}
+
+.pressToTheBottom {
+  margin-top: auto;
+  margin-bottom: 5px;
+}

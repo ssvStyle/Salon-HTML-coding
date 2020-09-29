@@ -1,8 +1,8 @@
 .testimonial{
-  @extend .service;
   padding: 0 0 20px 0;
+  @extend .threeBlocks;
   & .testimonial_block{
-    @extend .service_block;
+    @extend .oneBlock;
     &-content {
       font-style: italic;
       font-size: 21px;
@@ -16,7 +16,7 @@
       }
     }
     &-name {
-      @extend .service_block-price;
+      @extend .pressToTheBottom;
       color: $heading;
       font-size: 18px;
       font-weight: 600;

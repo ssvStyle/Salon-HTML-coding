@@ -2,10 +2,10 @@
   margin-top: 70px;
   padding: 40px 0;
   width: 100%;
-  background: $bgAboutColor;
+  background: $bgArticleColor;
   height: 500px;
   &_block {
-    @include dFlexDir();
+    @include dFlexDirect();
     width: $baseWidth;
     margin: 0 auto;
     padding: 20px 40px;

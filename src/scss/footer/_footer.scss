@@ -1,0 +1,113 @@
+footer {
+  width: 100%;
+  padding: 50px 0;
+  background: $footerBg;
+}
+
+.footer_content {
+  @extend .threeBlocks;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  background: $footerContentBg;
+  padding: 40px 40px 10px 40px;
+  &-adress, &-social, &-newsletters{
+    @extend .oneBlock;
+    & h2 {
+      color: $bgColor;
+      margin-top: 0;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+  &-adress {
+    flex: 0 10 auto;
+    & ul *{
+      list-style-type: none;
+      padding-bottom: 15px;
+      margin-left: -8px;
+    }
+    & li {
+      position: relative;
+      color: $footerTextColor;
+    }
+    & li:first-of-type:before {
+      @include imgMaskSvgBeforeEl('../img/icons/footer/map-marker-alt-solid.svg');
+    }
+    & li:nth-child(2):before {
+      @include imgMaskSvgBeforeEl('../img/icons/footer/phone-alt-solid.svg');
+    }
+    & li:nth-child(3):before {
+      @include imgMaskSvgBeforeEl('../img/icons/footer/telegram-plane-brands.svg');
+    }
+    & li:nth-child(4):before {
+      @include imgMaskSvgBeforeEl('../img/icons/footer/at-solid.svg');
+    }
+  }
+  &-social {
+    flex: 0 0 auto;
+    & ul *{
+      list-style-type: none;
+      padding-bottom: 15px;
+      margin-left: -8px;
+    }
+    & li a {
+      color: $footerTextColor;
+    }
+    & li {
+      position: relative;
+      color: $footerTextColor;
+    }
+    & li:first-of-type:before {
+      @include imgMaskSvgBeforeEl('../img/icons/footer/social/facebook-f-brands.svg');
+    }
+    & li:nth-child(2):before {
+      @include imgMaskSvgBeforeEl('../img/icons/footer/social/twitter-brands.svg');
+    }
+    & li:nth-child(3):before {
+       @include imgMaskSvgBeforeEl('../img/icons/footer/social/google-plus-g-brands.svg');
+     }
+    & li:nth-child(4):before {
+        @include imgMaskSvgBeforeEl('../img/icons/footer/social/linkedin-in-brands.svg');
+      }
+    & li:nth-child(5):before {
+         @include imgMaskSvgBeforeEl('../img/icons/footer/social/youtube-brands.svg');
+       }
+  }
+  &-newsletters {
+    flex: 0 0 31em;
+    & p {
+      color: $footerTextColor;
+      padding-bottom: 20px;
+    }
+    & .form_subscribe {
+      display: flex;
+    }
+    & .input_subscribe{
+      width: 300px;
+      border-radius: 30px 0 0 30px;
+      padding: 10px 0;
+      font-size: 20px;
+      border: none;
+      box-sizing: border-box;
+      padding-left: 10px;
+      &:focus {
+        outline: none;
+        border: none;
+      }
+      &:active {
+        border: none;
+      }
+    }
+
+  }
+}
+
+.copir {
+  flex: 1 0 auto;
+  text-align: center;
+  color: $footerTextColor;
+  font-size: 12px;
+  padding-bottom: 15px;
+}
+

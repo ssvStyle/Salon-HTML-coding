@@ -1,0 +1,50 @@
+.article_block {
+  width: $baseWidth;
+  height: fit-content;
+  background: $bgArticleColor;
+  border-radius: 20px;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  @include dFlexDirect();
+  &-img {
+    border-radius: 20px;
+    width: 40%;
+    margin-right: 30px;
+  }
+  & div p:first-of-type {
+    text-transform: uppercase;
+    font-size: 12px;
+    & span:nth-last-child(2) {
+      padding-right: 10px;
+    }
+  }
+  &-header{
+    font-weight: 400;
+    & a {
+      color: $heading;
+      &:hover {
+        color: $default;
+      }
+    }
+  }
+  &-date {
+    color: $base;
+  }
+  &-comments a, &-author {
+    color: $btnPrim;
+    &:hover {
+      color: $default;
+    }
+  }
+  &-content {
+    margin: 0 0 30px;
+    font-size: 16px;
+    color: #5d5c59;
+    line-height: 28px;
+    font-weight: 300;
+  }
+  &-quantity {
+    font-weight: 500;
+  }
+}

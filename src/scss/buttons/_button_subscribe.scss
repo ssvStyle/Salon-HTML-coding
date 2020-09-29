@@ -1,0 +1,10 @@
+.button_subscribe {
+  @extend .button_default;
+  border-radius: 0 30px 30px 0;
+  margin-left: 0;
+  border-left: none;
+  padding: 12px 26px;
+  font-weight: 600;
+  font-size: 16px;
+  outline: none;
+}

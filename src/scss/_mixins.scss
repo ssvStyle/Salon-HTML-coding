@@ -1,12 +1,23 @@
-@mixin dFlexDir($display: 'flex', $flexDir: 'row') {
-
-  display: $display;
+@mixin dFlexDirect( $flexDir: 'row') {
+  display: flex;
   flex-direction: $flexDir;
-
 }
 
 @mixin quotes() {
   content: '"';
   font-size: 28px;
   vertical-align: sub;
+}
+
+@mixin imgMaskSvgBeforeEl($url) {
+  content: '';
+  mask: url($url);
+  mask-repeat: no-repeat;
+  background-color: $footerTextColor;
+  top: 2px;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  position: absolute;
+  left: -30px;
 }

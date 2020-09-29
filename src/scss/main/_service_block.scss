@@ -1,12 +1,8 @@
 .service{
   padding-bottom: 50px;
-  width: $baseWidth;
-  margin: 0 auto;
-  @include dFlexDir();
+  @extend .threeBlocks;
   &_block{
-    padding-right: 60px;
-    @include dFlexDir($flexDir: 'column');
-    flex: 12 3 33em;
+    @extend .oneBlock;
     &-img{
       width: 55px;
     }
@@ -23,11 +19,10 @@
       margin: 10px 0 20px 0;
     }
     &-price{
+      @extend .pressToTheBottom;
       font-weight: 500;
       font-size: 24px;
       color: $default;
-      margin-top: auto;
-      margin-bottom: 5px;
     }
   }
 }

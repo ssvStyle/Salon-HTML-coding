@@ -16,7 +16,7 @@
     padding: 15px 0;
   }
   & .container {
-    @include dFlexDir();
+    @include dFlexDirect();
     justify-content: space-between;
     width: $baseWidth;
     margin: 0 auto;
@@ -24,7 +24,7 @@
 }
 
 .header_menu {
-  @include dFlexDir();
+  @include dFlexDirect();
   padding: 0 10px;
   &-element {
     padding: 20px 0;

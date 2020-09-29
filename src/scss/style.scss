@@ -1,14 +1,19 @@
 @import
   'var',
   'mixins',
-'helpers',
   'fonts/font',
   'body',
+  'helpers',
+  'abstract',
+  'buttons/button_default',
+  'buttons/button_subscribe',
   'header/header_nav',
   'header/header_slider',
   'main/main_header',
   'main/service_block',
   'main/about_block',
   'main/testimonial_block',
+  'main/articleBlock',
   'main/main',
-  'buttons/button_default';
+  'main/lastNews',
+  'footer/footer';
