@@ -6,7 +6,7 @@ let gulp = require('gulp'),
     rigger = require('gulp-rigger');
 
 gulp.task('html', function () {
-    return gulp.src('src/templates/**/*.html')
+    return gulp.src('src/*.html')
         .pipe(rigger())
         .pipe(gulp.dest('prod'));
 });
