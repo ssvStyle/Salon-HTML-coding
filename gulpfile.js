@@ -2,6 +2,7 @@ let gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
+    purge = require('gulp-css-purge'),
     sass = require('gulp-sass'),
     rigger = require('gulp-rigger');
 
@@ -16,6 +17,7 @@ gulp.task('style', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer]))
         .pipe(cleanCSS())
+        .pipe(purge())
         .pipe(gulp.dest('prod/css'));
 });
 
