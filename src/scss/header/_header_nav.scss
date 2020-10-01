@@ -19,6 +19,9 @@
     @include dFlexDirect();
     justify-content: space-between;
     width: $baseWidth;
+    @media screen and (max-width: 1170px) {
+      width: 100%;
+    }
     margin: 0 auto;
   }
 }

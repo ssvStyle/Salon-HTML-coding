@@ -9,6 +9,16 @@ $btnPrim: #aa9144;
 $footerBg: #1e1c18;
 $footerContentBg: #282725;
 $footerTextColor: #747474;
+$inputSubsColor: #393836;
 /*end colors*/
-$baseWidth: 1170px;
+//$baseWidth: 1px;
+
+//@media screen and (max-width: 1170px) {
+  //$baseWidth: 500px;
+//}
+
+//@media screen and (min-width: 1169px) {
+  $baseWidth: 1170px;
+//}
+
 $transition: 0.4s;

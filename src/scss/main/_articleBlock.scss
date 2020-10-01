@@ -1,5 +1,8 @@
 .article_block {
   width: $baseWidth;
+  @media screen and (max-width: 1170px) {
+    width: 100%;
+  }
   height: fit-content;
   background: $bgArticleColor;
   border-radius: 20px;

@@ -1,7 +1,13 @@
-.threeBlocks {
-  width: $baseWidth;
+.baseBlocks {
+  width: 100%;
   margin: 0 auto;
   @include dFlexDirect();
+  @media screen and (min-width: 500px) and (max-width: 750px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: $baseWidth) {
+    width: $baseWidth;
+  }
 }
 
 .oneBlock {

@@ -7,6 +7,7 @@
   font-weight: 500;
   color: $bgColor;
   border: 1px solid $default;
+  display: inline-block;
   &:hover{
     background: $default;
     transition: $transition;

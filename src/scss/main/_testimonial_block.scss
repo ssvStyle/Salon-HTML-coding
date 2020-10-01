@@ -1,6 +1,6 @@
 .testimonial{
   padding: 0 0 20px 0;
-  @extend .threeBlocks;
+  @extend .baseBlocks;
   & .testimonial_block{
     @extend .oneBlock;
     &-content {

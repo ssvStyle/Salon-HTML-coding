@@ -9,6 +9,14 @@
     width: $baseWidth;
     margin: 0 auto;
     padding: 20px 40px;
+    @media screen and (max-width: 1170px) {
+      width: 100%;
+      padding: 0;
+      flex-direction: column;
+      & img {
+        padding: 0;
+      }
+    }
   }
   & img {
     margin-right: 25px;
