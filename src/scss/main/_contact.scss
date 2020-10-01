@@ -1,18 +1,20 @@
 .contact {
   @extend .baseBlocks;
+  padding-top: 20px;
   & aside {
     flex: 0 0 20em;
-    padding: 0 20px;
     & .contact_info {
+      @extend .asideBlock;
+    }
+    & .contact_social {
+      margin-top: 30px;
+      @extend .asideBlock;
     }
   }
   & section {
     flex-grow: 1;
     @include dFlexDirect('column');
-    padding: 0 0 20px 10px;
-    & h1 {
-      margin-top: 16px;
-    }
+    padding: 30px;
     & .contact_form {
       box-sizing: border-box;
       flex-wrap: wrap;
@@ -25,11 +27,18 @@
           width: calc(50% - 25px);
         }
       }
+      & label {
+        font-weight: 500;
+        padding-bottom: 10px;
+      }
       & input {
         font-size: 25px;
         padding: 5px 20px;
         border: 1px solid #e0e0e0;
         border-radius: 10px;
+        &:focus {
+          outline: none;
+        }
       }
       & textarea {
         width: 100%;
@@ -37,7 +46,10 @@
         border: 1px solid #e0e0e0;
         border-radius: 10px;
         box-sizing: border-box;
-        margin-bottom: 10px;
+        margin: 10px 0;
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
