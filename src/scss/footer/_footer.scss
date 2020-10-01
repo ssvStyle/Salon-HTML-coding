@@ -13,6 +13,8 @@ footer {
   padding: 40px 40px 10px 40px;
   &-adress, &-social, &-newsletters{
     @extend .oneBlock;
+    flex: 0 0 20%;
+    padding-right: 30px;
     & h2 {
       color: $bgColor;
       margin-top: 0;
@@ -46,7 +48,6 @@ footer {
     }
   }
   &-social {
-    flex: 0 0 auto;
     & ul *{
       list-style-type: none;
       padding-bottom: 15px;
@@ -76,7 +77,6 @@ footer {
        }
   }
   &-newsletters {
-    flex: 0 0 31em;
     & p {
       color: $footerTextColor;
       padding-bottom: 20px;
@@ -106,7 +106,7 @@ footer {
 }
 
 .copir {
-  flex: 1 0 auto;
+  flex: 0 0 100%;
   text-align: center;
   color: $footerTextColor;
   font-size: 12px;
