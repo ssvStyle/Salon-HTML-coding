@@ -1,26 +1,28 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const menuList = document.getElementsByClassName('header_menu-list');
+    const menuList = document.getElementsByClassName('header_menu-list');//header_menu
 
-    for (var i = 0; i < menuList.length; i++) {
-        let liCollect = menuList[i].getElementsByTagName('li');
-        menuList[i].addEventListener('mouseover', (event) => {
-            let curEl = event.target.closest('.header_menu-list');
-            if (!curEl) return;
-            sliderMenuShow(liCollect);
-        });
-        menuList[i].addEventListener('mouseout', (event) => {
-            //console.log(event.target);
-            let curEl = event.target.closest('.header_menu-list');
-            if (!curEl) return;
-            sliderMenuRemove(liCollect);
-        });
-    }
+    const menu = document.getElementById('header_menu');
+
+
+    menu.addEventListener('mouseover', (event) => {
+        let target = event.target.closest('.header_menu-list');
+
+        if (!target) return;
+
+        sliderMenuShow(target.getElementsByTagName('li'));
+    });
+
+    menu.addEventListener('mouseout', (event) => {
+        let target = event.target.closest('.header_menu-list');
+        if (!target) return;
+        sliderMenuRemove(target.getElementsByTagName('li'));
+    });
+
 
     function sliderMenuShow(list) {
-        //console.log();
-        list[0].parentNode.previousElementSibling.setAttribute('style', 'background: #8E7424;')
+        list[0].parentNode.previousElementSibling.setAttribute('style', 'background: #8E7424; color: #EFFEF7;')
         list[0].parentNode.setAttribute('style', 'visibility: unset;');
-        let topAtrr = 62;
+        let topAtrr = 82;
         for (var i = 0; i < list.length; i++) {
             list[i].setAttribute('style', `top: ${topAtrr}px;`);
             topAtrr += 69;
@@ -28,9 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function sliderMenuRemove(list) {
-        //console.log('sliderMenuRemove');
         for (var i = list.length-1; i >= 0; i--) {
-            list[i].setAttribute('style', 'top: 61px;');
+            list[i].setAttribute('style', 'top: 82px;');
         }
         list[0].parentNode.setAttribute('style', 'opacity: 0;');
         list[0].parentNode.previousElementSibling.setAttribute('style', 'background: #effef7')

@@ -47,24 +47,25 @@
     }
   }
   &-list {
-    position: relative;
     padding: 20px 0;
     & .header_menu-listSubmenu {
       visibility: hidden;
       padding: 0;
       background-color: $default;
-      color: white;
       opacity: 1;
       transition: 0.3s;
       & li {
+        color: $bgColor;
         width: 90px;
         background: #8e7424;
-        color: #fff;
-        top: 62px;
+        top: 82px;
         position: absolute;
         padding: 20px 10px;
         border-bottom: 1px solid black;
         transition: 0.2s linear;
+      }
+      & li a {
+        color: $bgColor;
       }
       & li:first-of-type {
         z-index: 1;
