@@ -52,29 +52,35 @@ footer {
       list-style-type: none;
       padding-bottom: 15px;
       margin-left: -8px;
-    }
-    & li a {
-      color: $footerTextColor;
+      }
     }
     & li {
       position: relative;
       color: $footerTextColor;
     }
-    & li:first-of-type:before {
+    & li:first-of-type a:before {
       @include imgMaskSvgBeforeEl('../img/icons/footer/social/facebook-f-brands.svg');
     }
-    & li:nth-child(2):before {
+    & li:nth-child(2) a:before {
       @include imgMaskSvgBeforeEl('../img/icons/footer/social/twitter-brands.svg');
     }
-    & li:nth-child(3):before {
+    & li:nth-child(3) a:before {
        @include imgMaskSvgBeforeEl('../img/icons/footer/social/google-plus-g-brands.svg');
-     }
-    & li:nth-child(4):before {
+    }
+    & li:nth-child(4) a:before {
         @include imgMaskSvgBeforeEl('../img/icons/footer/social/linkedin-in-brands.svg');
-      }
-    & li:nth-child(5):before {
+    }
+    & li:nth-child(5) a:before {
          @include imgMaskSvgBeforeEl('../img/icons/footer/social/youtube-brands.svg');
-       }
+    }
+    & li a {
+      color: $footerTextColor;
+      &:hover {
+        color: $btnPrim;
+        &:before {
+          background-color: $btnPrim;
+        }
+      }
   }
   &-newsletters {
     & p {
