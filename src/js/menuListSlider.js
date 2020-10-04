@@ -1,14 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const menuList = document.getElementsByClassName('header_menu-list');//header_menu
-
     const menu = document.getElementById('header_menu');
 
 
     menu.addEventListener('mouseover', (event) => {
         let target = event.target.closest('.header_menu-list');
-
         if (!target) return;
-
         sliderMenuShow(target.getElementsByTagName('li'));
     });
 
@@ -20,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     function sliderMenuShow(list) {
+        //console.log('sliderMenuShow');
         list[0].parentNode.previousElementSibling.setAttribute('style', 'background: #8E7424; color: #EFFEF7;')
         list[0].parentNode.setAttribute('style', 'visibility: unset;');
         let topAtrr = 82;
@@ -30,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     function sliderMenuRemove(list) {
+        //console.log('sliderMenuRemove');
         for (var i = list.length-1; i >= 0; i--) {
             list[i].setAttribute('style', 'top: 82px;');
         }

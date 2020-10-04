@@ -51,20 +51,22 @@
     & .header_menu-listSubmenu {
       visibility: hidden;
       padding: 0;
-      background-color: $default;
+      background-color: $btnPrim;
       opacity: 1;
       transition: 0.3s;
       & li {
         color: $bgColor;
-        width: 90px;
-        background: #8e7424;
         top: 82px;
         position: absolute;
-        padding: 20px 10px;
-        border-bottom: 1px solid black;
-        transition: 0.2s linear;
+        transition: 0.3s linear;
+        border-bottom: 1px solid #987e2e;
+
       }
       & li a {
+        display: block;
+        width: 120px;
+        background: #8e7424;
+        padding: 20px;
         color: $bgColor;
       }
       & li:first-of-type {

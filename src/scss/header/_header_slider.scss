@@ -1,8 +1,18 @@
 .header_slider {
-  height: 530px;
+  max-height: 530px;
+  overflow: hidden;
   background:
           linear-gradient(rgba(36, 39, 38, 0.5),
           rgba(36, 39, 38, 0.5)),
-          rgba(36, 39, 38, 0.5) url(../img/hero-img.jpg) no-repeat center;
-  background-size: cover;
+          rgba(36, 39, 38, 0.5);
+  &-wrapper {
+    & img {
+      height: auto;
+      max-width: 100%;
+      display: none;
+    }
+  }
+  &-wrapper:first-of-type img{
+    display: block;
+  }
 }
