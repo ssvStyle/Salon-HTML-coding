@@ -7,11 +7,11 @@
   }
   overflow: hidden;
   position: relative;
+  z-index: -1;
   &-wrapper {
     position: absolute;
     width: 100%;
     height: auto;
-    //display: none;
     left: 0;
     opacity: 0;
     transition: 2s ease;
