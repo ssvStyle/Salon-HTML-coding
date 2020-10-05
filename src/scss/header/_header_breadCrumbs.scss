@@ -1,0 +1,25 @@
+.bread_crumbs {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  @include dFlexDirect('column');
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  &-header {
+    font-size: 40px;
+    color: $bgColor;
+    margin-bottom: 15px;
+  }
+  &-location{
+    font-size: 12px;
+    & a {
+      color: $default;
+    }
+    & a:after {
+      content: '/';
+      margin: 0 10px;
+    }
+
+  }
+}

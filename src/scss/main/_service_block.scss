@@ -5,6 +5,10 @@
     @extend .oneBlock;
     @media screen and (max-width: 650px){
       flex: 12 3 auto;
+      padding: 0 25px;
+    }
+    @media screen and (min-width: 650px) and (max-width: 870px){
+      padding-right: 25px;
     }
     &-img{
       width: 55px;

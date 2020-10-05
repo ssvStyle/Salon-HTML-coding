@@ -1,7 +1,7 @@
 .header_slider {
   width: 100%;
-  height: 530px;
-  max-height: 530px;
+  height: $sliderHeight;
+  max-height: $sliderHeight;
   @media screen and (max-width: 650px){
     max-height: 200px;
   }
@@ -17,7 +17,7 @@
     transition: 2s ease;
     z-index: -2;
     & img {
-      height: 530px;
+      height: $sliderHeight;
       position: relative;
       @media screen and (max-width: 650px){
         height: 200px;
