@@ -6,7 +6,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     menu.addEventListener('mouseover', (event) => {
         let target = event.target.closest('.header_menu-list');
-
         if (!target) return;
 
         sliderMenuShow(target.getElementsByTagName('li'));
