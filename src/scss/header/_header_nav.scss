@@ -28,13 +28,14 @@
 
 .header_menu {
   @include dFlexDirect();
+  align-items: center;
   padding: 0 10px;
   &-element {
-    padding: 20px 0;
   }
   &-link {
+    display: flex;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 10px 20px;
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 500;
@@ -49,17 +50,23 @@
   &-list {
     height: fit-content;
     & > a {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       &:after {
         content: '';
-        background-image: url('../img/icons/header/arrow-down-sign-to-navigate.svg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 15px;
+        mask: url('../img/icons/header/arrow-down-sign-to-navigate.svg');
+        mask-repeat: no-repeat;
+        background-color: $primary;
+        width: 10px;
         margin-left: 15px;
-        height: 15px;
+        height: 10px;
         display: block;
+      }
+      &:hover {
+        border-bottom: 1px solid $btnPrim;
+      }
+      &:after:hover {
+        background-color: $bgColor;
       }
     }
     & .header_menu-listSubmenu {
@@ -83,7 +90,7 @@
         color: $bgColor;
         width: 120px;
         display: block;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $btnPrim;
         font-weight: 400;
       }
       & li a:hover {
