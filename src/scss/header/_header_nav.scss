@@ -19,7 +19,7 @@
     @include dFlexDirect();
     justify-content: space-between;
     width: $baseWidth;
-    @media screen and (max-width: 1170px) {
+    @media screen and (max-width: $baseWidth) {
       width: 100%;
     }
     margin: 0 auto;
@@ -47,19 +47,35 @@
     }
   }
   &-list {
-    padding: 20px 0;
+    & > a {
+      display: inline-flex;
+      align-items: center;
+      &:after {
+        content: '';
+        background-image: url('../img/icons/header/arrow-down-sign-to-navigate.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 15px;
+        margin-left: 15px;
+        height: 15px;
+        display: block;
+      }
+    }
     & .header_menu-listSubmenu {
-      visibility: hidden;
+      //visibility: hidden;
       padding: 0;
       background-color: $btnPrim;
+      position: relative;
+
       opacity: 1;
       transition: 0.3s;
       & li {
         color: $bgColor;
-        top: 82px;
+        top: -20px;
         position: absolute;
         transition: 0.3s linear;
         border-bottom: 1px solid #987e2e;
+        z-index: 9998;
 
       }
       & li a {
@@ -67,6 +83,7 @@
         width: 120px;
         background: #8e7424;
         padding: 20px;
+        //z-index: 9998;
         color: $bgColor;
       }
       & li:first-of-type {
@@ -75,4 +92,5 @@
       list-style: none;
     }
   }
+
 }
