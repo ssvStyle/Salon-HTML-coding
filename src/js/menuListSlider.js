@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function sliderMenuShow(list) {
         console.log('sliderMenuShow');
-        list[0].parentNode.previousElementSibling.setAttribute('style', 'background: #8E7424; color: #EFFEF7;');
+        list[0].parentNode.previousElementSibling.setAttribute('style', 'background: #aa9144; color: #EFFEF7;');
         //list[0].parentNode.previousElementSibling.setAttribute('style', 'background: #8E7424');
         list[0].parentNode.setAttribute('style', 'visibility: unset;');
         let topAtrr = 0;//82;
