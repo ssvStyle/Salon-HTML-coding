@@ -17,7 +17,6 @@ gulp.task('style', function () {
         [
         'src/scss/style.scss',
         'src/scss/calendar.scss',
-        'src/scss/modal.scss',
         ])
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer]))

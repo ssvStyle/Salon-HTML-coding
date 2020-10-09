@@ -1,6 +1,6 @@
 <div class="appointment">
     <div id="appointment-list" class="wrapper">
-        <div class="appointment_block">
+        <div class="appointment_block" data-timeId="1" data-time="10-00"  data-date="">
             <img src="img/icons/note/note_book_add.svg">
             <p class="appointment_block-time">
                10-00
@@ -9,10 +9,10 @@
                 Свободное время
             </p>
             <span class="appointment_block-add">
-                Book Appointment
+                Добавить запись
             </span>
         </div>
-        <div class="appointment_block">
+        <div class="appointment_block" data-timeId="2" data-time="11-00"  data-date="">
             <img src="img/icons/note/note_book_add.svg">
             <p class="appointment_block-time">
                 11-00
@@ -21,10 +21,10 @@
                 Свободное время
             </p>
             <span class="appointment_block-add">
-                Book Appointment
+                Добавить запись
             </span>
         </div>
-        <div class="appointment_block">
+        <div class="appointment_block" data-timeId="3" data-time="12-00"  data-date="">
             <img src="img/icons/note/note_book_add.svg">
             <p class="appointment_block-time">
                 12-00
@@ -33,22 +33,19 @@
                 Свободное время
             </p>
             <span class="appointment_block-add">
-                Book Appointment
+                Добавить запись
             </span>
         </div>
-        <div class="appointment_block">
-            <img src="img/icons/note/note_book_add.svg">
+        <div class="appointment_block" data-timeId="4" data-time="13-00"  data-date="">
+            <img src="img/icons/note/note_book_lock.svg">
             <p class="appointment_block-time">
                 13-00
             </p>
             <p class="appointment_block-info">
-                Свободное время
+                Занято
             </p>
-            <span class="appointment_block-add">
-                Book Appointment
-            </span>
         </div>
-        <div class="appointment_block">
+        <div class="appointment_block" data-timeId="5" data-time="14-00"  data-date="">
             <img src="img/icons/note/note_book_add.svg">
             <p class="appointment_block-time">
                 14-00
@@ -57,10 +54,10 @@
                 Свободное время
             </p>
             <span class="appointment_block-add">
-                Book Appointment
+                Добавить запись
             </span>
         </div>
-        <div class="appointment_block">
+        <div class="appointment_block" data-timeId="6" data-time="15-00"  data-date="">
             <img src="img/icons/note/note_book_add.svg">
             <p class="appointment_block-time">
                 15-00
@@ -69,10 +66,10 @@
                 Свободное время
             </p>
             <span class="appointment_block-add">
-                Book Appointment
+                Добавить запись
             </span>
         </div>
-        <div class="appointment_block">
+        <div class="appointment_block" data-timeId="7" data-time="16-00"  data-date="">
             <img src="img/icons/note/note_book_add.svg">
             <p class="appointment_block-time">
                 16-00
@@ -81,11 +78,12 @@
                 Свободное время
             </p>
             <span class="appointment_block-add">
-                Book Appointment
+                Добавить запись
             </span>
         </div>
-        <div class="appointment_block">
+        <div class="appointment_block" data-timeId="8" data-time="17-00"  data-date="">
             <img src="img/icons/note/note_book_add.svg">
+
             <p class="appointment_block-time">
                 17-00
             </p>
@@ -93,11 +91,12 @@
                 Свободное время
             </p>
             <span class="appointment_block-add">
-                Book Appointment
+                Добавить запись
             </span>
         </div>
-        <div class="appointment_block">
+        <div class="appointment_block" data-timeId="9" data-time="18-00"  data-date="">
             <img src="img/icons/note/note_book_add.svg">
+
             <p class="appointment_block-time">
                 18-00
             </p>
@@ -105,7 +104,7 @@
                 Свободное время
             </p>
             <span class="appointment_block-add">
-                Book Appointment
+                Добавить запись
             </span>
         </div>
     </div>
@@ -190,7 +189,42 @@
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p>Some text in the Modal..</p>
+                <h2>Добавить запись</h2>
+                <p>Дата: <span id="modalDate">21-11-2020</span></p>
+                <p>Время: <span id="modalTiming"></span></p>
+
+                <form action="" class="modal_form">
+                    <input type="hidden" name="timeId" id="timeId" value="">
+                    <div class="modal_form-input">
+                        <label for="nameField">Имя:</label>
+                        <input id="nameField" type="text">
+                    </div>
+                    <div class="modal_form-input">
+                        <label for="phoneField">Телефон:</label>
+                        <input id="phoneField" type="text">
+                    </div>
+                    <div class="modal_form-input">
+                        <select name="service" class="select">
+                            <option value="" selected="">Что делаем?</option>
+                            <option value="1">Стрижка</option>
+                            <option value="2">Стрижка челки</option>
+                            <option value="3">Стрижка (Два человека)</option>
+                            <option value="4">Окрашивание в 1 тон</option>
+                        </select>
+                    </div>
+
+                    <div class="modal_form-input">
+                        <select name="service" class="select">
+                            <option value="" selected="">Дополнительно</option>
+                            <option value="1">Стрижка</option>
+                            <option value="2">Стрижка челки</option>
+                            <option value="3">Стрижка (Два человека)</option>
+                            <option value="4">Окрашивание в 1 тон</option>
+                        </select>
+                    </div>
+
+                    <div class="centerLink"><button class="button_default">Добавить</button></div>
+                </form>
             </div>
 
         </div>
