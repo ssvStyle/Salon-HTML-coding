@@ -8,8 +8,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
         const timeIdDataset = event.target.dataset;
 
-        console.log(event.target.className == 'appointment_block');
-
         if (event.target.className === 'appointment_block') {
             timeId.value = event.target.dataset['timeid'];
             modalTiming.innerText = event.target.dataset['time'];
