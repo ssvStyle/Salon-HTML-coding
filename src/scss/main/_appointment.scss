@@ -1,12 +1,27 @@
 .appointment{
+  width: $baseWidth;
+  padding: 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
   @include dFlexDirect();
   & .wrapper{
+    height: fit-content;
     position: unset;
     padding: 0;
     flex: 2 0 auto;
     & .appointment_block{
+      cursor: pointer;
+      & img {
+        width: 25px;
+        align-self: center;
+      }
+      &:hover {
+        transition: $transition;
+        background-color: #ededed;
+      }
       & p {
-        margin-top: 0;
+        margin: 0;
+        align-self: center;
       }
       width: 100%;
       @include dFlexDirect();

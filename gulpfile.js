@@ -13,7 +13,12 @@ gulp.task('html', function () {
 });
 
 gulp.task('style', function () {
-    return gulp.src(['src/scss/style.scss', 'src/scss/calendar.scss'])
+    return gulp.src(
+        [
+        'src/scss/style.scss',
+        'src/scss/calendar.scss',
+        'src/scss/modal.scss',
+        ])
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss([autoprefixer]))
         .pipe(cleanCSS())

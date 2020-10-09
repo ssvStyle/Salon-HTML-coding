@@ -10,6 +10,7 @@
 
 <div class="container">
 <link rel="stylesheet" href="css/calendar.css">
+<link rel="stylesheet" href="css/modal.css">
     <header>
         <div class="wrapper">
             <nav class="header_nav">
@@ -78,10 +79,11 @@
     </header>
     <main>
         <div class="appointment">
-            <div class="wrapper">
+            <div id="appointment-list" class="wrapper">
                 <div class="appointment_block">
+                    <img src="img/icons/note/note_book_add.svg">
                     <p class="appointment_block-time">
-                        9-00
+                       10-00
                     </p>
                     <p class="appointment_block-info">
                         Свободное время
@@ -91,8 +93,9 @@
                     </span>
                 </div>
                 <div class="appointment_block">
+                    <img src="img/icons/note/note_book_add.svg">
                     <p class="appointment_block-time">
-                        9-00
+                        11-00
                     </p>
                     <p class="appointment_block-info">
                         Свободное время
@@ -102,8 +105,9 @@
                     </span>
                 </div>
                 <div class="appointment_block">
+                    <img src="img/icons/note/note_book_add.svg">
                     <p class="appointment_block-time">
-                        9-00
+                        12-00
                     </p>
                     <p class="appointment_block-info">
                         Свободное время
@@ -113,8 +117,9 @@
                     </span>
                 </div>
                 <div class="appointment_block">
+                    <img src="img/icons/note/note_book_add.svg">
                     <p class="appointment_block-time">
-                        9-00
+                        13-00
                     </p>
                     <p class="appointment_block-info">
                         Свободное время
@@ -124,8 +129,9 @@
                     </span>
                 </div>
                 <div class="appointment_block">
+                    <img src="img/icons/note/note_book_add.svg">
                     <p class="appointment_block-time">
-                        9-00
+                        14-00
                     </p>
                     <p class="appointment_block-info">
                         Свободное время
@@ -135,8 +141,9 @@
                     </span>
                 </div>
                 <div class="appointment_block">
+                    <img src="img/icons/note/note_book_add.svg">
                     <p class="appointment_block-time">
-                        9-00
+                        15-00
                     </p>
                     <p class="appointment_block-info">
                         Свободное время
@@ -146,8 +153,9 @@
                     </span>
                 </div>
                 <div class="appointment_block">
+                    <img src="img/icons/note/note_book_add.svg">
                     <p class="appointment_block-time">
-                        9-00
+                        16-00
                     </p>
                     <p class="appointment_block-info">
                         Свободное время
@@ -157,8 +165,21 @@
                     </span>
                 </div>
                 <div class="appointment_block">
+                    <img src="img/icons/note/note_book_add.svg">
                     <p class="appointment_block-time">
-                        9-00
+                        17-00
+                    </p>
+                    <p class="appointment_block-info">
+                        Свободное время
+                    </p>
+                    <span class="appointment_block-add">
+                        Book Appointment
+                    </span>
+                </div>
+                <div class="appointment_block">
+                    <img src="img/icons/note/note_book_add.svg">
+                    <p class="appointment_block-time">
+                        18-00
                     </p>
                     <p class="appointment_block-info">
                         Свободное время
@@ -241,8 +262,19 @@
                         </div>
                     </div>
         
+                    <script src="js/calendar.js"></script>
                 </div>
             </div>
+                <div id="myModal" class="modal">
+        
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Some text in the Modal..</p>
+                    </div>
+        
+                </div>
+        
         </div>
     </main>
     <footer>
@@ -279,6 +311,7 @@
                 </p>
         </div>
     </footer>
+<script src="js/modal.js"></script>
 </div>
 <script src="js/menuListSlider.js"></script>
 <script src="js/headerSlider.js"></script>
